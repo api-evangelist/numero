@@ -1,8 +1,14 @@
 aid: numero
 name: Numero
-description: 'Numero is a company surfaced as a portfolio company of initialized-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise-saas. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Numero is an all-in-one donor database and call-time platform built for
+  political campaigns at the federal, state, and local levels. It combines a fast, filterable
+  donor CRM with auto-deduplication and pledge tracking, a mobile call-time dialer with
+  one-click SMS, email, and voicemail follow-up plus virtual local numbers, prefilled
+  one-click contribution forms with access to a large 1-click donor network, event and
+  RSVP fundraising tools, and a deliverability-focused email platform. Campaigns use
+  Numero to identify prospect donors, run efficient candidate call time, and raise money
+  faster. Numero is backed by Initialized Capital. It currently exposes no public
+  developer API surface; api.numero.ai serves the web application backend only.'
 url: https://raw.githubusercontent.com/api-evangelist/numero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,30 @@ x-backed-by:
 - initialized-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://res.cloudinary.com/numero/image/upload/v1663822883/static/numero_neu46f.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise Saas
+- Political Campaigns
+- Fundraising
+- Donor Management
+- CRM
+- Email
+- Nonprofit Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/numero-domain-security.yml
 - type: Website
   url: https://numero.ai/
+- type: Blog
+  url: https://numero.ai/blog
+- type: Pricing
+  url: https://numero.ai/#pricing-form
+- type: Login
+  url: https://app.numero.ai
+- type: PrivacyPolicy
+  url: https://app.numero.ai/privacy
+- type: TermsOfService
+  url: https://app.numero.ai/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
